@@ -12,12 +12,22 @@
       text-align: center;
       padding: 30px;
     }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
     .crypto {
       background: #1a1f3c;
       border-radius: 12px;
       padding: 20px;
       margin: 20px auto;
       max-width: 400px;
+    }
+    .crypto h2 {
+      margin-bottom: 10px;
     }
     button {
       background: #4caf50;
@@ -37,6 +47,13 @@
       padding: 10px;
       border-radius: 8px;
     }
+    img.qr {
+      margin-top: 10px;
+      border: 3px solid #4caf50;
+      border-radius: 12px;
+      width: 150px;
+      height: 150px;
+    }
   </style>
 </head>
 <body>
@@ -44,29 +61,39 @@
 <h1>💚 Soutenir le projet</h1>
 <p>Les dons sont volontaires. Merci 🙏</p>
 
+<!-- NANO -->
 <div class="crypto">
   <h2>🟢 NANO</h2>
   <button onclick="window.location.href='nano:nano_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu'">
     Ouvrir le wallet
   </button>
   <code>nano_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu</code>
+  <br>
+  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=nano:nano_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu&size=150x150" alt="QR NANO">
 </div>
 
+<!-- BANANO -->
 <div class="crypto">
   <h2>🍌 BANANO</h2>
   <button onclick="window.location.href='banano:ban_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu'">
     Ouvrir le wallet
   </button>
   <code>ban_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu</code>
+  <br>
+  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=banano:ban_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu&size=150x150" alt="QR BANANO">
 </div>
 
+<!-- ANANOS -->
 <div class="crypto">
   <h2>🍍 ANANOS</h2>
-  <button onclick="window.location.href='ananos:ana_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu'">
-    Ouvrir le wallet
+  <button onclick="alert('Veuillez copier l’adresse ou scanner le QR code avec votre wallet ANANOS')">
+    Copier / Scanner
   </button>
   <code>ana_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu</code>
+  <br>
+  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=ana_3sd9671tudpy6ratq8qp7ubc4tbj1mnfqpozo4jyaetnreccwgcz5966m1gu&size=150x150" alt="QR ANANOS">
 </div>
 
 </body>
 </html>
+
