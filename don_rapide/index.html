@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Soutenir la chaîne YouTube !</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .vide {
+    padding: 1px;
+    }
+    .container {
+  max-width: 200px;
+  margin: auto;
+}
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1220;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      }
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+    a {
+      display: block;
+      margin-top: 10px;
+      word-break: break-all;
+      background: #1a1f3c;
+      padding: 10px;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <img src="/assets/cryptos/XNO.png" width="32" height="32" alt="Nano logo"><img src="/assets/cryptos/BAN.png" width="32" height="32" alt="Banana logo"><img src="/assets/cryptos/ANA.png" width="32" height="32" alt="Ananos logo"><img src="/assets/cryptos/XRO.png" width="32" height="32" alt="RaiblocksOne logo"><img src="/assets/cryptos/XDG.png" width="32" height="32" alt="DogeNano logo"><img src="/assets/cryptos/USD.png" width="32" height="32" alt="NanUSD logo"><img src="/assets/cryptos/NANBTC.png" width="32" height="32" alt="NanBTC logo">
+<h1>💙 Soutenir Arc-En-Miel</h1>
+<p>Soutenez la chaîne en quelques clics grâce à Nanswap Pay.</p>
+<p>* La crypto par défaut est "Nano", vous pourrez la changer après avoir cliqué sur le lien pour mettre la crypto de votre choix.</p>
+<a class="container" href="https://nanswap.com/pay/invoice?publicKey=16785b05700cfd46&priceAmount=1&priceCurrency=EUR&invoiceId=Don+1%E2%82%AC&defaultCurrency=XNO&shopName=Arc-En-Miel">☕ Offrir 1€</a>
+<p class="vide"></p>
+<a class="container" href="https://nanswap.com/pay/invoice?publicKey=16785b05700cfd46&priceAmount=5&priceCurrency=EUR&invoiceId=Don+5%E2%82%AC&defaultCurrency=XNO&shopName=Arc-En-Miel">🍕 Offrir 5€</a>
+<p class="vide"></p>
+<a class="container" href="https://nanswap.com/pay/invoice?publicKey=16785b05700cfd46&priceAmount=10&priceCurrency=EUR&invoiceId=Don+10%E2%82%AC&defaultCurrency=XNO&shopName=Arc-En-Miel">🎮 Offrir 10€</a>
+<p class="vide"></p>
+<a class="container" href="https://nanswap.com/pay/invoice?publicKey=16785b05700cfd46&priceAmount=20&priceCurrency=EUR&invoiceId=Don+20%E2%82%AC&defaultCurrency=XNO&shopName=Arc-En-Miel">🚀 Offrir 20€</a>
+<p class="vide"></p>
+<a class="container" href="/don_crypto">⬅ Retour aux dons libres</a>
+
+<div id="footer-container"></div>
+    <script>
+fetch('/assets/html/footer.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('footer-container').innerHTML = data;
+  });
+</script>
